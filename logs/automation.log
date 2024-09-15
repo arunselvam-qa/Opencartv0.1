@@ -1,0 +1,28 @@
+19:13:09.917 [main] INFO  testCases.TC001_AccountRegister - System is on Home page
+19:13:10.363 [main] INFO  testCases.TC001_AccountRegister - System is on Registration page
+19:13:10.380 [main] INFO  testCases.TC001_AccountRegister - Entering details..
+19:13:11.705 [main] INFO  testCases.TC001_AccountRegister - Account created
+19:13:14.164 [main] INFO  testCases.TC002_Login - *Starting Verify Login Test*
+19:13:14.927 [main] INFO  testCases.TC002_Login - Entering Email and Password
+19:13:15.586 [main] INFO  testCases.TC002_Login - Clicked Login
+19:15:11.956 [main] INFO  testCases.TC001_AccountRegister - System is on Home page
+19:15:12.262 [main] INFO  testCases.TC001_AccountRegister - System is on Registration page
+19:15:12.264 [main] INFO  testCases.TC001_AccountRegister - Entering details..
+19:15:13.525 [main] INFO  testCases.TC001_AccountRegister - Account created
+19:15:15.613 [main] INFO  testCases.TC002_Login - *Starting Verify Login Test*
+19:15:16.419 [main] INFO  testCases.TC002_Login - Entering Email and Password
+19:15:17.115 [main] INFO  testCases.TC002_Login - Clicked Login
+19:25:21.623 [main] INFO  testCases.TC001_AccountRegister - System is on Home page
+19:25:22.046 [main] INFO  testCases.TC001_AccountRegister - System is on Registration page
+19:25:22.049 [main] INFO  testCases.TC001_AccountRegister - Entering details..
+19:25:23.179 [main] INFO  testCases.TC001_AccountRegister - Account created
+19:25:26.230 [main] INFO  testCases.TC002_Login - *Starting Verify Login Test*
+19:25:26.581 [main] INFO  testCases.TC002_Login - Entering Email and Password
+19:25:27.415 [main] INFO  testCases.TC002_Login - Clicked Login
+19:35:09.125 [main] INFO  testCases.TC001_AccountRegister - System is on Home page
+19:35:09.582 [main] INFO  testCases.TC001_AccountRegister - System is on Registration page
+19:35:09.584 [main] INFO  testCases.TC001_AccountRegister - Entering details..
+19:35:10.704 [main] INFO  testCases.TC001_AccountRegister - Account created
+19:35:13.880 [main] INFO  testCases.TC002_Login - *Starting Verify Login Test*
+19:35:14.622 [main] INFO  testCases.TC002_Login - Entering Email and Password
+19:35:15.272 [main] INFO  testCases.TC002_Login - Clicked Login
