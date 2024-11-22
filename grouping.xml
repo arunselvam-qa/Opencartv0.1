@@ -19,4 +19,4 @@
 			<!--<class name="testCases.TC003_LoginDDT"></class> -->
 		</classes>
 	</test> <!-- Test -->
-</suite> <!-- Suite -->
+</suite> <!-- Suite --> 
