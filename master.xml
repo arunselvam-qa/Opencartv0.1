@@ -9,7 +9,7 @@
 		<parameter name="Browser" value="Chrome"></parameter>
 		<classes>
 			<!--<class name="testCases.TC001_AccountRegister" /> -->
-			<!--<class name="testCases.TC002_Login"></class>  -->
+			<class name="testCases.TC002_Login"></class>  
 			<class name="testCases.TC004_ProductSearch"></class>
 		</classes>
 	</test> <!-- Test -->
