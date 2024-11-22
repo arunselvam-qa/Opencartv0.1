@@ -29,6 +29,7 @@ public class HomePage extends BasePage {
 	@FindBy(xpath = "//button[@class='btn btn-default btn-lg']")
 	WebElement btn_search;
 
+	
 	//Actions
 	public void clkMyAccount()
 	{
