@@ -1,12 +1,13 @@
-C:\Users\Arun Selvam\eclipse-workspace\Opencartv0.1\src\test\java\baseTests\BaseClass.java
-C:\Users\Arun Selvam\eclipse-workspace\Opencartv0.1\src\test\java\pageObjects\AccountPage.java
-C:\Users\Arun Selvam\eclipse-workspace\Opencartv0.1\src\test\java\pageObjects\BasePage.java
-C:\Users\Arun Selvam\eclipse-workspace\Opencartv0.1\src\test\java\pageObjects\HomePage.java
-C:\Users\Arun Selvam\eclipse-workspace\Opencartv0.1\src\test\java\pageObjects\LoginPage.java
-C:\Users\Arun Selvam\eclipse-workspace\Opencartv0.1\src\test\java\pageObjects\RegisterAccountPage.java
-C:\Users\Arun Selvam\eclipse-workspace\Opencartv0.1\src\test\java\testCases\TC001_AccountRegister.java
-C:\Users\Arun Selvam\eclipse-workspace\Opencartv0.1\src\test\java\testCases\TC002_Login.java
-C:\Users\Arun Selvam\eclipse-workspace\Opencartv0.1\src\test\java\testCases\TC003_LoginDDT.java
-C:\Users\Arun Selvam\eclipse-workspace\Opencartv0.1\src\test\java\utilities\DataProviderClass.java
-C:\Users\Arun Selvam\eclipse-workspace\Opencartv0.1\src\test\java\utilities\ExcelUtility.java
-C:\Users\Arun Selvam\eclipse-workspace\Opencartv0.1\src\test\java\utilities\ExtentReportUtility.java
+C:\Users\ADMIN\eclipse-workspace\Opencartv0.1\src\test\java\baseTests\BaseClass.java
+C:\Users\ADMIN\eclipse-workspace\Opencartv0.1\src\test\java\pageObjects\AccountPage.java
+C:\Users\ADMIN\eclipse-workspace\Opencartv0.1\src\test\java\pageObjects\BasePage.java
+C:\Users\ADMIN\eclipse-workspace\Opencartv0.1\src\test\java\pageObjects\HomePage.java
+C:\Users\ADMIN\eclipse-workspace\Opencartv0.1\src\test\java\pageObjects\LoginPage.java
+C:\Users\ADMIN\eclipse-workspace\Opencartv0.1\src\test\java\pageObjects\RegisterAccountPage.java
+C:\Users\ADMIN\eclipse-workspace\Opencartv0.1\src\test\java\testCases\TC001_AccountRegister.java
+C:\Users\ADMIN\eclipse-workspace\Opencartv0.1\src\test\java\testCases\TC002_Login.java
+C:\Users\ADMIN\eclipse-workspace\Opencartv0.1\src\test\java\testCases\TC003_LoginDDT.java
+C:\Users\ADMIN\eclipse-workspace\Opencartv0.1\src\test\java\testCases\TC004_ProductSearch.java
+C:\Users\ADMIN\eclipse-workspace\Opencartv0.1\src\test\java\utilities\DataProviderClass.java
+C:\Users\ADMIN\eclipse-workspace\Opencartv0.1\src\test\java\utilities\ExcelUtility.java
+C:\Users\ADMIN\eclipse-workspace\Opencartv0.1\src\test\java\utilities\ExtentReportUtility.java

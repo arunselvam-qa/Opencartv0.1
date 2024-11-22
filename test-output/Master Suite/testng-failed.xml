@@ -6,15 +6,8 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <parameter name="os" value="Windows"/>
-    <parameter name="Browser" value="Chrome"/>
+    <parameter name="Browser" value="Firefox"/>
     <classes>
-      <class name="testCases.TC001_AccountRegister">
-        <methods>
-          <include name="verifyRegister"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- testCases.TC001_AccountRegister -->
       <class name="testCases.TC002_Login">
         <methods>
           <include name="setUp"/>

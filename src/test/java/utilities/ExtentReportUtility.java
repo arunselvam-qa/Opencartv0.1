@@ -1,8 +1,8 @@
 package utilities;
 
-import java.awt.Desktop;
-import java.io.File;
-import java.io.IOException;
+//import java.awt.Desktop;
+//import java.io.File;
+//import java.io.IOException;
 
 //Extent report 5.x...//version
 
@@ -96,6 +96,8 @@ public class ExtentReportUtility implements ITestListener {
 
 		extent.flush();
 
+		//Code to open html file ON Finish
+		/*
 		String pathOfExtentReport = System.getProperty("user.dir")+"\\reports\\"+reportName;
 		File extentReport = new File(pathOfExtentReport);
 
@@ -107,6 +109,7 @@ public class ExtentReportUtility implements ITestListener {
 		{
 			e.printStackTrace();
 		}
+		*/
 	}
 
 }

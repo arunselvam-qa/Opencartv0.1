@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+
 public class HomePage extends BasePage {
 
 	//Constructor
@@ -21,6 +22,12 @@ public class HomePage extends BasePage {
 	
 	@FindBy(xpath = "//a[normalize-space()='Login']")
 	WebElement btn_login;
+	
+	@FindBy(xpath = "//input[@placeholder='Search']")
+	WebElement txt_search;
+	
+	@FindBy(xpath = "//button[@class='btn btn-default btn-lg']")
+	WebElement btn_search;
 
 	//Actions
 	public void clkMyAccount()
@@ -35,5 +42,12 @@ public class HomePage extends BasePage {
 	{
 		btn_login.click();
 	}
-	
+	public void enterSearch(String product_name)
+	{
+		txt_search.sendKeys(product_name);
+	}
+	public void clkSearch()
+	{
+		btn_search.click();
+	}
 }

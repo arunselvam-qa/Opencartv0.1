@@ -1,23 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-15T19:35:04 IST" name="Master Suite" finished-at="2024-09-15T19:35:15 IST" duration-ms="10785">
+  <suite started-at="2024-11-22T13:30:04 IST" name="Master Suite" finished-at="2024-11-22T13:30:14 IST" duration-ms="10661">
     <groups>
-      <group name="Master">
-        <method signature="TC001_AccountRegister.verifyRegister()[pri:0, instance:testCases.TC001_AccountRegister@6ca0256d]" name="verifyRegister" class="testCases.TC001_AccountRegister"/>
-        <method signature="TC002_Login.verifyLogin()[pri:0, instance:testCases.TC002_Login@51850751]" name="verifyLogin" class="testCases.TC002_Login"/>
-      </group> <!-- Master -->
-      <group name="Sanity">
-        <method signature="TC002_Login.verifyLogin()[pri:0, instance:testCases.TC002_Login@51850751]" name="verifyLogin" class="testCases.TC002_Login"/>
-      </group> <!-- Sanity -->
-      <group name="Regression">
-        <method signature="TC001_AccountRegister.verifyRegister()[pri:0, instance:testCases.TC001_AccountRegister@6ca0256d]" name="verifyRegister" class="testCases.TC001_AccountRegister"/>
-      </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-09-15T19:35:04 IST" name="Test" finished-at="2024-09-15T19:35:15 IST" duration-ms="10785">
-      <class name="testCases.TC002_Login">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_Login@51850751]" started-at="2024-09-15T19:35:10 IST" name="setUp" finished-at="2024-09-15T19:35:13 IST" duration-ms="2991" status="PASS">
+    <test started-at="2024-11-22T13:30:04 IST" name="Test" finished-at="2024-11-22T13:30:14 IST" duration-ms="10661">
+      <class name="testCases.TC004_ProductSearch">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC004_ProductSearch@38f57b3d]" started-at="2024-11-22T13:30:04 IST" name="setUp" finished-at="2024-11-22T13:30:09 IST" duration-ms="4998" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,41 +23,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLogin()[pri:0, instance:testCases.TC002_Login@51850751]" started-at="2024-09-15T19:35:13 IST" name="verifyLogin" finished-at="2024-09-15T19:35:15 IST" duration-ms="1479" status="PASS">
+        <test-method signature="searchItem()[pri:0, instance:testCases.TC004_ProductSearch@38f57b3d]" started-at="2024-11-22T13:30:09 IST" name="searchItem" finished-at="2024-11-22T13:30:09 IST" duration-ms="403" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC002_Login@51850751]" started-at="2024-09-15T19:35:15 IST" name="tearDown" finished-at="2024-09-15T19:35:15 IST" duration-ms="165" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC002_Login -->
-      <class name="testCases.TC001_AccountRegister">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_AccountRegister@6ca0256d]" started-at="2024-09-15T19:35:04 IST" name="setUp" finished-at="2024-09-15T19:35:09 IST" duration-ms="4029" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyRegister()[pri:0, instance:testCases.TC001_AccountRegister@6ca0256d]" started-at="2024-09-15T19:35:09 IST" name="verifyRegister" finished-at="2024-09-15T19:35:10 IST" duration-ms="1683" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRegister -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC001_AccountRegister@6ca0256d]" started-at="2024-09-15T19:35:10 IST" name="tearDown" finished-at="2024-09-15T19:35:10 IST" duration-ms="160" status="PASS">
+        </test-method> <!-- searchItem -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC004_ProductSearch@38f57b3d]" started-at="2024-11-22T13:30:09 IST" name="tearDown" finished-at="2024-11-22T13:30:14 IST" duration-ms="5120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC001_AccountRegister -->
+      </class> <!-- testCases.TC004_ProductSearch -->
     </test> <!-- Test -->
   </suite> <!-- Master Suite -->
 </testng-results>

@@ -5,7 +5,9 @@
 	<groupId>Opencartv0.1</groupId>
 	<artifactId>Opencartv0.1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
+	<properties>
+    	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
 	<build>
     <!-- To define the plugin version in your parent POM -->
     <pluginManagement>
