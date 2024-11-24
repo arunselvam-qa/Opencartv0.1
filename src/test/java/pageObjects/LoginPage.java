@@ -17,6 +17,8 @@ public class LoginPage extends BasePage {
 	WebElement txt_pass;
 	@FindBy(xpath = "//input[@value='Login']")
 	WebElement btn_login;
+	@FindBy(xpath = "//div[@class='alert alert-danger alert-dismissible']")
+	WebElement msg_error;
 
 	public void enterEmail(String email)
 	{
@@ -29,6 +31,10 @@ public class LoginPage extends BasePage {
 	public void clkLogin()
 	{
 		btn_login.click();
+	}
+	public boolean errMsg()
+	{
+		return msg_error.isDisplayed();
 	}
 
 }

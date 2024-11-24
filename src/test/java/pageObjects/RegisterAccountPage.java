@@ -36,6 +36,9 @@ public class RegisterAccountPage extends BasePage {
 	WebElement msg_acntCreated;
 	@FindBy(xpath = "//a[normalize-space()='Continue']")
 	WebElement btn_acntContinue;
+	
+	@FindBy(xpath = "//a[@class='list-group-item'][normalize-space()='Logout']")
+	WebElement btn_logout;
 
 	public void setFirstname(String fname)
 	{
@@ -92,6 +95,10 @@ public class RegisterAccountPage extends BasePage {
 	public void finalContinue()
 	{
 		btn_acntContinue.click();
+	}
+	public void clkLogout()
+	{
+		btn_logout.click();
 	}
 
 }

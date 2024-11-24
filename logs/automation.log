@@ -1,37 +1,14 @@
-18:46:51.723 [TestNG-tests-1] INFO  testCases.TC001_AccountRegister - System is on Registration page
-18:46:51.728 [TestNG-tests-1] INFO  testCases.TC001_AccountRegister - Entering details..
-18:46:52.769 [TestNG-tests-1] INFO  testCases.TC001_AccountRegister - Account created
-18:47:05.052 [TestNG-tests-3] INFO  testCases.TC001_AccountRegister - System is on Home page
-18:47:05.724 [TestNG-tests-3] INFO  testCases.TC001_AccountRegister - System is on Registration page
-18:47:05.724 [TestNG-tests-3] INFO  testCases.TC001_AccountRegister - Entering details..
-18:47:07.067 [TestNG-tests-3] INFO  testCases.TC001_AccountRegister - Account created
-18:48:32.639 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+10:51:14.868 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
   C:\Users\ADMIN\eclipse-workspace\Opencartv0.1\master.xml
 
-18:48:39.126 [main] INFO  testCases.TC002_Login - *Starting Verify Login Test*
-18:48:39.394 [main] INFO  testCases.TC002_Login - Entering Email and Password
-18:48:40.711 [main] INFO  testCases.TC002_Login - Clicked Login
-18:49:00.092 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\ADMIN\eclipse-workspace\Opencartv0.1\master.xml
-
-18:52:01.175 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\ADMIN\eclipse-workspace\Opencartv0.1\master.xml
-
-18:52:35.880 [main] INFO  testCases.TC002_Login - *Starting Verify Login Test*
-18:52:36.338 [main] INFO  testCases.TC002_Login - Entering Email and Password
-18:52:36.877 [main] INFO  testCases.TC002_Login - Clicked Login
-18:56:18.457 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\ADMIN\eclipse-workspace\Opencartv0.1\master.xml
-
-18:56:20.695 [main] INFO  testCases.TC002_Login - *Starting Verify Login Test*
-18:56:21.110 [main] INFO  testCases.TC002_Login - Entering Email and Password
-18:56:21.793 [main] INFO  testCases.TC002_Login - Clicked Login
-19:55:13.469 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\ADMIN\eclipse-workspace\Opencartv0.1\master.xml
-
-19:55:16.225 [main] INFO  testCases.TC004_ProductSearch - Entering Product name in search
-19:55:58.950 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\ADMIN\eclipse-workspace\Opencartv0.1\master.xml
-
-19:56:00.898 [main] INFO  testCases.TC004_ProductSearch - Entering Product name in search
-13:30:09.366 [main] INFO  testCases.TC004_ProductSearch - Entering Product name in search
+10:51:18.064 [main] INFO  testCases.TC_SanityE2E - Verifying Title of the Home Page
+10:51:18.096 [main] INFO  testCases.TC_SanityE2E - Verifying the currency Dropdown
+10:51:18.207 [main] INFO  testCases.TC_SanityE2E - System is on Home page
+10:51:18.508 [main] INFO  testCases.TC_SanityE2E - Navigating to Registration page
+10:51:18.509 [main] INFO  testCases.TC_SanityE2E - Entering details..
+10:51:19.425 [main] INFO  testCases.TC_SanityE2E - Account created
+10:51:19.659 [main] INFO  testCases.TC_SanityE2E - Logged out
+10:51:19.662 [main] INFO  testCases.TC_SanityE2E - Starting Login Test
+10:51:19.872 [main] INFO  testCases.TC_SanityE2E - Entering Email and Password
+10:51:20.476 [main] INFO  testCases.TC_SanityE2E - Clicked Login
+10:51:20.540 [main] INFO  testCases.TC_SanityE2E - Verifying the Title of My Account page

@@ -15,6 +15,8 @@ public class AccountPage extends BasePage {
 	WebElement myAccText;
 	@FindBy(xpath = "//a[@class='list-group-item'][normalize-space()='Logout']")
 	WebElement clkLogOut;
+	@FindBy(xpath = "//a[normalize-space()='Qafox.com']")
+	WebElement clkHome;
 	
 	public boolean textVerification()
 	{
@@ -31,6 +33,11 @@ public class AccountPage extends BasePage {
 	public void clkLogout()
 	{
 		clkLogOut.click();
+	}
+	
+	public void homeLogo()
+	{
+		clkHome.click();
 	}
 
 }

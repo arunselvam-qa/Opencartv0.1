@@ -95,7 +95,7 @@ public class BaseClass {
 	@AfterClass(groups = {"Sanity","Regression","Master"})
 	public void tearDown() throws InterruptedException
 	{
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		driver.quit();
 	}
 

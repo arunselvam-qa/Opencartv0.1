@@ -1,0 +1,73 @@
+10:12:31.403 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ADMIN\eclipse-workspace\Opencartv0.1\master.xml
+
+10:12:33.445 [main] INFO  testCases.TC_SanityE2E - *Starting Login Test*
+10:12:33.726 [main] INFO  testCases.TC_SanityE2E - Entering Email and Password
+10:12:34.353 [main] INFO  testCases.TC_SanityE2E - Clicked Login
+10:12:34.381 [main] INFO  testCases.TC_SanityE2E - Verifying Title of the Page
+10:18:24.856 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ADMIN\eclipse-workspace\Opencartv0.1\master.xml
+
+10:18:26.936 [main] INFO  testCases.TC_SanityE2E - *Starting Login Test*
+10:18:27.194 [main] INFO  testCases.TC_SanityE2E - Entering Email and Password
+10:18:27.840 [main] INFO  testCases.TC_SanityE2E - Clicked Login
+10:18:27.870 [main] INFO  testCases.TC_SanityE2E - Verifying Title of the Account Page
+10:18:28.063 [main] INFO  testCases.TC_SanityE2E - Navigating to Home Page
+10:18:28.063 [main] INFO  testCases.TC_SanityE2E - Verifying Title of the Home Page
+10:28:39.968 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ADMIN\eclipse-workspace\Opencartv0.1\master.xml
+
+10:28:42.086 [main] INFO  testCases.TC_SanityE2E - *Starting Login Test*
+10:28:42.343 [main] INFO  testCases.TC_SanityE2E - Entering Email and Password
+10:28:42.961 [main] INFO  testCases.TC_SanityE2E - Clicked Login
+10:28:43.036 [main] INFO  testCases.TC_SanityE2E - Verifying the currency dropdown
+10:28:43.053 [main] INFO  testCases.TC_SanityE2E - Verifying Title of the Account Page
+10:28:43.245 [main] INFO  testCases.TC_SanityE2E - Navigating to Home Page
+10:28:43.245 [main] INFO  testCases.TC_SanityE2E - Verifying Title of the Home Page
+10:29:40.771 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ADMIN\eclipse-workspace\Opencartv0.1\master.xml
+
+10:29:42.758 [main] INFO  testCases.TC_SanityE2E - *Starting Login Test*
+10:29:43.033 [main] INFO  testCases.TC_SanityE2E - Entering Email and Password
+10:29:43.686 [main] INFO  testCases.TC_SanityE2E - Clicked Login
+10:29:43.717 [main] INFO  testCases.TC_SanityE2E - Verifying Title of the Account Page
+10:29:43.911 [main] INFO  testCases.TC_SanityE2E - Navigating to Home Page
+10:29:43.911 [main] INFO  testCases.TC_SanityE2E - Verifying Title of the Home Page
+10:29:43.930 [main] INFO  testCases.TC_SanityE2E - Verifying the currency dropdown
+10:37:27.296 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ADMIN\eclipse-workspace\Opencartv0.1\master.xml
+
+10:37:29.277 [main] INFO  testCases.TC_SanityE2E - Verifying Title of the Home Page
+10:37:29.294 [main] INFO  testCases.TC_SanityE2E - Verifying the currency Dropdown
+10:37:29.337 [main] INFO  testCases.TC_SanityE2E - Starting Login Test
+10:37:29.591 [main] INFO  testCases.TC_SanityE2E - Entering Email and Password
+10:37:30.257 [main] INFO  testCases.TC_SanityE2E - Clicked Login
+10:39:44.924 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ADMIN\eclipse-workspace\Opencartv0.1\master.xml
+
+10:39:46.896 [main] INFO  testCases.TC_SanityE2E - Verifying Title of the Home Page
+10:39:46.927 [main] INFO  testCases.TC_SanityE2E - Verifying the currency Dropdown
+10:39:46.968 [main] INFO  testCases.TC_SanityE2E - Starting Login Test
+10:39:47.206 [main] INFO  testCases.TC_SanityE2E - Entering Email and Password
+10:39:47.845 [main] INFO  testCases.TC_SanityE2E - Clicked Login
+10:39:47.862 [main] INFO  testCases.TC_SanityE2E - Verifying the Title of My Account page
+10:44:01.554 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ADMIN\eclipse-workspace\Opencartv0.1\master.xml
+
+10:44:03.559 [main] INFO  testCases.TC_SanityE2E - Verifying Title of the Home Page
+10:44:03.584 [main] INFO  testCases.TC_SanityE2E - Verifying the currency Dropdown
+10:44:03.681 [main] INFO  testCases.TC_SanityE2E - System is on Home page
+10:44:03.979 [main] INFO  testCases.TC_SanityE2E - Navigating to Registration page
+10:44:03.981 [main] INFO  testCases.TC_SanityE2E - Entering details..
+10:44:04.856 [main] INFO  testCases.TC_SanityE2E - Account created
+10:44:04.858 [main] INFO  testCases.TC_SanityE2E - Starting Login Test
+10:44:09.945 [main] ERROR testCases.TC_SanityE2E - Exception thrown
+10:44:09.946 [main] ERROR testCases.TC_SanityE2E - no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='Login']"}
+  (Session info: chrome=131.0.6778.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [29fc038822014522413c1dbcd30b4693, findElement {using=xpath, value=//a[normalize-space()='Login']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52670}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52670/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 29fc038822014522413c1dbcd30b4693

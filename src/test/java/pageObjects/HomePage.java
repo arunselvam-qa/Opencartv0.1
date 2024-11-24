@@ -29,6 +29,8 @@ public class HomePage extends BasePage {
 	@FindBy(xpath = "//button[@class='btn btn-default btn-lg']")
 	WebElement btn_search;
 
+	@FindBy(xpath = "//span[normalize-space()='Currency']")
+	WebElement btn_currency;
 	
 	//Actions
 	public void clkMyAccount()
@@ -50,5 +52,10 @@ public class HomePage extends BasePage {
 	public void clkSearch()
 	{
 		btn_search.click();
+	}
+	
+	public boolean currencyBtn()
+	{
+		return btn_currency.isDisplayed();
 	}
 }
