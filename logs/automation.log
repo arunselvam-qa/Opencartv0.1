@@ -1,14 +1,36 @@
-10:51:14.868 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\ADMIN\eclipse-workspace\Opencartv0.1\master.xml
-
-10:51:18.064 [main] INFO  testCases.TC_SanityE2E - Verifying Title of the Home Page
-10:51:18.096 [main] INFO  testCases.TC_SanityE2E - Verifying the currency Dropdown
-10:51:18.207 [main] INFO  testCases.TC_SanityE2E - System is on Home page
-10:51:18.508 [main] INFO  testCases.TC_SanityE2E - Navigating to Registration page
-10:51:18.509 [main] INFO  testCases.TC_SanityE2E - Entering details..
-10:51:19.425 [main] INFO  testCases.TC_SanityE2E - Account created
-10:51:19.659 [main] INFO  testCases.TC_SanityE2E - Logged out
-10:51:19.662 [main] INFO  testCases.TC_SanityE2E - Starting Login Test
-10:51:19.872 [main] INFO  testCases.TC_SanityE2E - Entering Email and Password
-10:51:20.476 [main] INFO  testCases.TC_SanityE2E - Clicked Login
-10:51:20.540 [main] INFO  testCases.TC_SanityE2E - Verifying the Title of My Account page
+11:36:30.648 [TestNG-tests-3] INFO  testCases.TC_SanityE2E - Product is displayed in detailed view
+11:36:30.656 [TestNG-tests-3] INFO  testCases.TC_SanityE2E - Adding number of Quantity
+11:36:31.361 [TestNG-tests-2] INFO  testCases.TC_SanityE2E - Clicking Add to Cart button
+11:36:31.435 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Navigating to Registration page
+11:36:31.435 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Entering details..
+11:36:32.242 [TestNG-tests-3] INFO  testCases.TC_SanityE2E - Clicking Add to Cart button
+11:36:33.344 [TestNG-tests-2] INFO  testCases.TC_SanityE2E - Product added to cart
+11:36:33.344 [TestNG-tests-2] INFO  testCases.TC_SanityE2E - Navigating to Shopping cart screen
+11:36:33.581 [TestNG-tests-2] INFO  testCases.TC_SanityE2E - Product is displayed in Cart table
+11:36:33.918 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Account created
+11:36:33.929 [TestNG-tests-2] INFO  testCases.TC_SanityE2E - Removing Product from Cart
+11:36:34.005 [TestNG-tests-3] INFO  testCases.TC_SanityE2E - Product added to cart
+11:36:34.007 [TestNG-tests-3] INFO  testCases.TC_SanityE2E - Navigating to Shopping cart screen
+11:36:34.173 [TestNG-tests-2] INFO  testCases.TC_SanityE2E - Clicked continue shopping
+11:36:34.173 [TestNG-tests-2] INFO  testCases.TC_SanityE2E - Navigated to Home Page
+11:36:34.372 [TestNG-tests-3] INFO  testCases.TC_SanityE2E - Product is displayed in Cart table
+11:36:34.413 [TestNG-tests-3] INFO  testCases.TC_SanityE2E - Removing Product from Cart
+11:36:34.921 [TestNG-tests-3] INFO  testCases.TC_SanityE2E - Clicked continue shopping
+11:36:34.921 [TestNG-tests-3] INFO  testCases.TC_SanityE2E - Navigated to Home Page
+11:36:36.011 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Logged out
+11:36:36.016 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Starting Login Test
+11:36:36.257 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Entering Email and Password
+11:36:36.877 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Clicked Login
+11:36:36.921 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Verifying the Title of My Account page
+11:36:36.926 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Entering Product name in search
+11:36:38.250 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Expected Product is presented
+11:36:38.252 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Selecting the Product
+11:36:40.713 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Product is displayed in detailed view
+11:36:40.714 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Adding number of Quantity
+11:36:42.278 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Clicking Add to Cart button
+11:36:43.386 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Product added to cart
+11:36:43.386 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Navigating to Shopping cart screen
+11:36:44.562 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Product is displayed in Cart table
+11:36:44.605 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Removing Product from Cart
+11:36:45.950 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Clicked continue shopping
+11:36:45.950 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Navigated to Home Page

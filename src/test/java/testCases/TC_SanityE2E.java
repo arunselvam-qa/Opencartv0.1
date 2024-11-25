@@ -5,29 +5,32 @@ import org.testng.annotations.Test;
 
 import baseTests.BaseClass;
 import pageObjects.AccountPage;
+import pageObjects.AddtoCartPage;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
+import pageObjects.ProductPage;
 import pageObjects.RegisterAccountPage;
+import pageObjects.SearchPage;
 
 public class TC_SanityE2E extends BaseClass {
-	
-	
+
+
 	@Test(priority = 0)
 	public void HomePageTitleTest()
 	{
 		logger.info("Verifying Title of the Home Page");
 		Assert.assertEquals(driver.getTitle(), "Your Store");
 	}
-	
+
 	@Test(priority = 1)
 	public void CurrencyDropdownTest()
 	{
 		try 
 		{
-			logger.info("Verifying the currency Dropdown");
+			logger.info("Verifying the currency Drop down");
 			HomePage hp = new HomePage(driver);
 			Assert.assertTrue(hp.currencyBtn());
-			
+
 		} 
 		catch (Exception e) 
 		{
@@ -36,8 +39,8 @@ public class TC_SanityE2E extends BaseClass {
 			Assert.fail();
 		}
 	}
-	
-	@Test(priority = 2)
+
+	@Test(priority = 2, enabled = true)
 	public void AccountRegisterTest()
 	{
 		try 
@@ -47,18 +50,18 @@ public class TC_SanityE2E extends BaseClass {
 			logger.info("System is on Home page");
 			home.clkRegister();
 			logger.info("Navigating to Registration page");
-			
+
 			RegisterAccountPage ra = new RegisterAccountPage(driver);
 			logger.info("Entering details..");
 			ra.setFirstname(randomAlphabeticString(6).toUpperCase());
 			ra.setLastname(randomAlphabeticString(5).toUpperCase());
 			ra.setEmail(randomAlphabeticString(6)+"@mailinator.com");
 			ra.setTelephone(randomNumericString(10));
-			
+
 			String pass = randomAphNumString(8);
 			ra.setPass(pass);
 			ra.setCnfPass(pass);
-			
+
 			ra.checkPrivacyPol();
 			ra.clickContinue();
 			String msg = ra.getAccountRegisterMsg();
@@ -66,16 +69,16 @@ public class TC_SanityE2E extends BaseClass {
 			logger.info("Account created");
 			ra.clkLogout();
 			logger.info("Logged out");
-			
+
 		} 
 		catch (Exception e) 
 		{
 			logger.error(e.getMessage());
 			Assert.assertTrue(false);
 		}
-		
+
 	}
-	
+
 	@Test (priority = 3)
 	public void LoginTest()
 	{
@@ -85,14 +88,14 @@ public class TC_SanityE2E extends BaseClass {
 			HomePage hp = new HomePage(driver);
 			hp.clkMyAccount();
 			hp.clkLogin();
-			
+
 			LoginPage lp = new LoginPage(driver);
 			logger.info("Entering Email and Password");
 			lp.enterEmail(prop.getProperty("email"));
 			lp.enterPassword(prop.getProperty("pass"));
 			lp.clkLogin();
 			logger.info("Clicked Login");
-			
+
 			AccountPage ap = new AccountPage(driver);
 			Assert.assertTrue(ap.textVerification());
 			logger.info("Verifying the Title of My Account page");
@@ -105,7 +108,128 @@ public class TC_SanityE2E extends BaseClass {
 			Assert.fail();
 		}
 	}
+
+	@Test(priority = 4)
+	public void SearchTest()
+	{
+		try 
+		{
+			HomePage hp = new HomePage(driver);
+			logger.info("Entering Product name in search");
+			hp.enterSearch("Mac");
+			hp.clkSearch();
+
+			SearchPage sp = new SearchPage(driver);
+			boolean productexists = sp.isProductExists("MacBook Air");
+			if(productexists)
+			{
+				logger.info("Expected Product is presented");
+				Assert.assertTrue(true);
+			}
+			else
+			{
+				logger.info("No matching product");
+				Assert.assertTrue(false);
+			}
+		} 
+		catch (Exception e) 
+		{
+			logger.error(e.getMessage());
+			Assert.assertTrue(false);
+
+		}
+	}
+
+	@Test(priority = 5, dependsOnMethods = {"SearchTest"})
+	public void ProductDetailsPageNavigationTest()
+	{
+		try 
+		{
+			SearchPage sp = new SearchPage(driver);
+			logger.info("Selecting the Product");
+			sp.clickOnProduct("MacBook Air");
+			
+			ProductPage pp = new ProductPage(driver);
+			
+			if(pp.productHeader().equalsIgnoreCase("MacBook Air"))
+			{
+				logger.info("Product is displayed in detailed view");
+				Assert.assertTrue(true);
+			}
+			else
+			{
+				logger.info("Incorrect product");
+				Assert.assertTrue(false);
+			}
+
+		} catch (Exception e) 
+		{
+			logger.error(e.getMessage());
+			Assert.assertTrue(false);
+		}
+	}
 	
+	@Test(priority = 6, dependsOnMethods = {"ProductDetailsPageNavigationTest"})
+	public void AddToCartTest()
+	{
+		try 
+		{
+			ProductPage pp = new ProductPage(driver);
+			logger.info("Adding number of Quantity");
+			pp.noOfQuantity("3");
+			Thread.sleep(1500);
+			logger.info("Clicking Add to Cart button");
+			pp.addToCart();
+			pp.addToCart();
+			Thread.sleep(1000);
+			if(pp.isMessageDisplayed())
+			{
+				logger.info("Product added to cart");
+				Assert.assertTrue(true);
+			}
+			else
+			{
+				logger.info("Product not added to cart");
+				Assert.assertTrue(false);
+			}
+		} 
+		catch (Exception e) 
+		{
+			logger.error(e.getMessage());
+			Assert.assertTrue(false);
+		}
+		
+	}
 	
+	@Test(priority = 7, dependsOnMethods = {"AddToCartTest"})
+	public void ShoppingCartTest()
+	{
+		try 
+		{
+			AddtoCartPage ac = new AddtoCartPage(driver);
+			logger.info("Navigating to Shopping cart screen");
+			ac.clkShoppingCart();
+			if(ac.getProductName().equalsIgnoreCase("MacBook Air"))
+			{
+				logger.info("Product is displayed in Cart table");
+				ac.clkRemove();
+				logger.info("Removing Product from Cart");
+				ac.clkContinue();
+				
+			}
+			else
+			{
+				ac.clkContinueShp();
+			}
+			logger.info("Clicked continue shopping");
+			logger.info("Navigated to Home Page");
+			Assert.assertTrue(true);
+		} 
+		catch (Exception e) 
+		{
+			logger.error(e.getMessage());
+			Assert.assertTrue(false);
+		}
+	}
 
 }

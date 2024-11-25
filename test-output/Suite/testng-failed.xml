@@ -4,17 +4,22 @@
   <listeners>
     <listener class-name="utilities.ExtentReportUtility"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="FirefoxTest(failed)">
+  <test thread-count="5" parallel="tests" name="ChromeTest(failed)">
     <parameter name="os" value="Windows"/>
-    <parameter name="Browser" value="Firefox"/>
+    <parameter name="Browser" value="Chrome"/>
     <classes>
-      <class name="testCases.TC001_AccountRegister">
+      <class name="testCases.TC_SanityE2E">
         <methods>
-          <include name="verifyRegister"/>
+          <include name="AccountRegisterTest"/>
+          <include name="SearchTest"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="ProductDetailsPageNavigationTest"/>
+          <include name="LoginTest"/>
+          <include name="AddToCartTest"/>
+          <include name="ShoppingCartTest"/>
         </methods>
-      </class> <!-- testCases.TC001_AccountRegister -->
+      </class> <!-- testCases.TC_SanityE2E -->
     </classes>
-  </test> <!-- FirefoxTest(failed) -->
+  </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

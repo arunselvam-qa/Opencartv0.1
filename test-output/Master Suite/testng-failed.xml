@@ -6,13 +6,16 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <parameter name="os" value="Windows"/>
-    <parameter name="Browser" value="Chrome"/>
+    <parameter name="Browser" value="Edge"/>
     <classes>
       <class name="testCases.TC_SanityE2E">
         <methods>
+          <include name="SearchTest"/>
           <include name="setUp"/>
+          <include name="ProductDetailsPageNavigationTest"/>
           <include name="tearDown"/>
-          <include name="LoginTest"/>
+          <include name="AddToCartTest"/>
+          <include name="ShoppingCartTest"/>
         </methods>
       </class> <!-- testCases.TC_SanityE2E -->
     </classes>

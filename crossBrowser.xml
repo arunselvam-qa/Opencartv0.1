@@ -10,7 +10,7 @@
 		<parameter name="os" value="Windows"></parameter>
 		<parameter name="Browser" value="Edge"></parameter>
 		<classes>
-			<class name="testCases.TC001_AccountRegister" />
+			<class name="testCases.TC_SanityE2E" />
 		</classes>
 	</test> <!-- Test -->
 
@@ -18,15 +18,15 @@
 		<parameter name="os" value="Windows"></parameter>
 		<parameter name="Browser" value="Firefox"></parameter>
 		<classes>
-			<class name="testCases.TC001_AccountRegister" />
+			<class name="testCases.TC_SanityE2E" />
 		</classes>
-	</test>
+	</test>  
 
 	<test name="ChromeTest">
 		<parameter name="os" value="Windows"></parameter>
 		<parameter name="Browser" value="Chrome"></parameter>
 		<classes>
-			<class name="testCases.TC001_AccountRegister" />
+			<class name="testCases.TC_SanityE2E" />
 		</classes>
 	</test>
 
