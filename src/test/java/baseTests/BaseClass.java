@@ -28,7 +28,7 @@ import org.testng.annotations.Parameters;
 
 public class BaseClass {
 
-	public WebDriver driver;
+    public static WebDriver driver;
 	public Logger logger;
 	public Properties prop;
 
@@ -43,7 +43,8 @@ public class BaseClass {
 		FileInputStream file = new FileInputStream(".//src//test//resources//config.properties");
 		prop = new Properties();
 		prop.load(file);
-
+		
+		logger.info("Opening the Browser");
 		if(prop.getProperty("executionEnv").equalsIgnoreCase("remote"))
 		{
 			DesiredCapabilities cap = new DesiredCapabilities();
@@ -95,6 +96,7 @@ public class BaseClass {
 	@AfterClass(groups = {"Sanity","Regression","Master"})
 	public void tearDown() throws InterruptedException
 	{
+		logger.info("Closing the Browser");
 		Thread.sleep(2000);
 		driver.quit();
 	}
@@ -121,6 +123,11 @@ public class BaseClass {
 
 	public String captureScreenshot(String name)
 	{
+		if (driver == null) 
+		{
+            logger.error("WebDriver is not initialized.");
+            return null;
+		}
 		String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);

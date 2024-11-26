@@ -6,18 +6,15 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <parameter name="os" value="Windows"/>
-    <parameter name="Browser" value="Edge"/>
+    <parameter name="Browser" value="Chrome"/>
     <classes>
-      <class name="testCases.TC_SanityE2E">
+      <class name="testCases.TC007_RemovingCartTest">
         <methods>
-          <include name="SearchTest"/>
           <include name="setUp"/>
-          <include name="ProductDetailsPageNavigationTest"/>
           <include name="tearDown"/>
-          <include name="AddToCartTest"/>
           <include name="ShoppingCartTest"/>
         </methods>
-      </class> <!-- testCases.TC_SanityE2E -->
+      </class> <!-- testCases.TC007_RemovingCartTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Master Suite] -->

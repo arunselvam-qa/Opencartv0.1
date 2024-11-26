@@ -177,11 +177,9 @@ public class TC_SanityE2E extends BaseClass {
 			ProductPage pp = new ProductPage(driver);
 			logger.info("Adding number of Quantity");
 			pp.noOfQuantity("3");
-			Thread.sleep(1500);
 			logger.info("Clicking Add to Cart button");
 			pp.addToCart();
-			pp.addToCart();
-			Thread.sleep(1000);
+			Thread.sleep(2000);
 			if(pp.isMessageDisplayed())
 			{
 				logger.info("Product added to cart");

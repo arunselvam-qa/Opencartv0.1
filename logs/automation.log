@@ -1,36 +1,20 @@
-11:36:30.648 [TestNG-tests-3] INFO  testCases.TC_SanityE2E - Product is displayed in detailed view
-11:36:30.656 [TestNG-tests-3] INFO  testCases.TC_SanityE2E - Adding number of Quantity
-11:36:31.361 [TestNG-tests-2] INFO  testCases.TC_SanityE2E - Clicking Add to Cart button
-11:36:31.435 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Navigating to Registration page
-11:36:31.435 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Entering details..
-11:36:32.242 [TestNG-tests-3] INFO  testCases.TC_SanityE2E - Clicking Add to Cart button
-11:36:33.344 [TestNG-tests-2] INFO  testCases.TC_SanityE2E - Product added to cart
-11:36:33.344 [TestNG-tests-2] INFO  testCases.TC_SanityE2E - Navigating to Shopping cart screen
-11:36:33.581 [TestNG-tests-2] INFO  testCases.TC_SanityE2E - Product is displayed in Cart table
-11:36:33.918 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Account created
-11:36:33.929 [TestNG-tests-2] INFO  testCases.TC_SanityE2E - Removing Product from Cart
-11:36:34.005 [TestNG-tests-3] INFO  testCases.TC_SanityE2E - Product added to cart
-11:36:34.007 [TestNG-tests-3] INFO  testCases.TC_SanityE2E - Navigating to Shopping cart screen
-11:36:34.173 [TestNG-tests-2] INFO  testCases.TC_SanityE2E - Clicked continue shopping
-11:36:34.173 [TestNG-tests-2] INFO  testCases.TC_SanityE2E - Navigated to Home Page
-11:36:34.372 [TestNG-tests-3] INFO  testCases.TC_SanityE2E - Product is displayed in Cart table
-11:36:34.413 [TestNG-tests-3] INFO  testCases.TC_SanityE2E - Removing Product from Cart
-11:36:34.921 [TestNG-tests-3] INFO  testCases.TC_SanityE2E - Clicked continue shopping
-11:36:34.921 [TestNG-tests-3] INFO  testCases.TC_SanityE2E - Navigated to Home Page
-11:36:36.011 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Logged out
-11:36:36.016 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Starting Login Test
-11:36:36.257 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Entering Email and Password
-11:36:36.877 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Clicked Login
-11:36:36.921 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Verifying the Title of My Account page
-11:36:36.926 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Entering Product name in search
-11:36:38.250 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Expected Product is presented
-11:36:38.252 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Selecting the Product
-11:36:40.713 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Product is displayed in detailed view
-11:36:40.714 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Adding number of Quantity
-11:36:42.278 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Clicking Add to Cart button
-11:36:43.386 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Product added to cart
-11:36:43.386 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Navigating to Shopping cart screen
-11:36:44.562 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Product is displayed in Cart table
-11:36:44.605 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Removing Product from Cart
-11:36:45.950 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Clicked continue shopping
-11:36:45.950 [TestNG-tests-1] INFO  testCases.TC_SanityE2E - Navigated to Home Page
+10:19:43.878 [main] INFO  testCases.TC004_ProductSearch - Expected Product is presented
+10:19:43.884 [main] INFO  testCases.TC004_ProductSearch - Closing the Browser
+10:19:46.021 [main] INFO  testCases.TC005_ProductDetailView - Opening the Browser
+10:19:48.934 [main] INFO  testCases.TC005_ProductDetailView - Entering Product name in search
+10:19:49.536 [main] INFO  testCases.TC005_ProductDetailView - Selecting the Product
+10:19:50.468 [main] INFO  testCases.TC005_ProductDetailView - Product is displayed in detailed view
+10:19:50.470 [main] INFO  testCases.TC005_ProductDetailView - Closing the Browser
+10:19:52.592 [main] INFO  testCases.TC006_AddToCartTest - Opening the Browser
+10:19:55.494 [main] INFO  testCases.TC006_AddToCartTest - Entering Product name in search
+10:19:56.020 [main] INFO  testCases.TC006_AddToCartTest - Selecting the Product
+10:19:56.901 [main] INFO  testCases.TC006_AddToCartTest - Adding number of Quantity
+10:19:56.957 [main] INFO  testCases.TC006_AddToCartTest - Clicking on Add to Cart button
+10:19:58.996 [main] INFO  testCases.TC006_AddToCartTest - Product added to cart
+10:19:58.998 [main] INFO  testCases.TC006_AddToCartTest - Closing the Browser
+10:20:01.100 [main] INFO  testCases.TC007_ShopCartTest - Opening the Browser
+10:20:10.152 [main] INFO  testCases.TC007_ShopCartTest - Navigating to Shopping cart screen
+10:20:10.444 [main] INFO  testCases.TC007_ShopCartTest - System is in Shopping cart screen
+10:20:10.444 [main] INFO  testCases.TC007_ShopCartTest - Clicked continue shopping
+10:20:10.745 [main] INFO  testCases.TC007_ShopCartTest - Navigated to Home Page
+10:20:10.746 [main] INFO  testCases.TC007_ShopCartTest - Closing the Browser
