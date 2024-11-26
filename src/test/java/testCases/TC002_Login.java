@@ -17,18 +17,18 @@ public class TC002_Login extends BaseClass {
 		{
 			logger.info("*Starting Verify Login Test*");
 			
-			HomePage hp = new HomePage(driver);
+			HomePage hp = new HomePage(getDriver());
 			hp.clkMyAccount();
 			hp.clkLogin();
 			
-			LoginPage lp = new LoginPage(driver);
+			LoginPage lp = new LoginPage(getDriver());
 			logger.info("Entering Email and Password");
 			lp.enterEmail(prop.getProperty("email"));
 			lp.enterPassword(prop.getProperty("pass"));
 			lp.clkLogin();
 			logger.info("Clicked Login");
 			
-			AccountPage ap = new AccountPage(driver);
+			AccountPage ap = new AccountPage(getDriver());
 			Assert.assertTrue(ap.textVerification());
 			
 		} 

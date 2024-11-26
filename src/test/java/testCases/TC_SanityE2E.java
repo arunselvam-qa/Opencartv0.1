@@ -19,7 +19,7 @@ public class TC_SanityE2E extends BaseClass {
 	public void HomePageTitleTest()
 	{
 		logger.info("Verifying Title of the Home Page");
-		Assert.assertEquals(driver.getTitle(), "Your Store");
+		Assert.assertEquals(getDriver().getTitle(), "Your Store");
 	}
 
 	@Test(priority = 1)
@@ -28,7 +28,7 @@ public class TC_SanityE2E extends BaseClass {
 		try 
 		{
 			logger.info("Verifying the currency Drop down");
-			HomePage hp = new HomePage(driver);
+			HomePage hp = new HomePage(getDriver());
 			Assert.assertTrue(hp.currencyBtn());
 
 		} 
@@ -45,13 +45,13 @@ public class TC_SanityE2E extends BaseClass {
 	{
 		try 
 		{
-			HomePage home = new HomePage(driver);
+			HomePage home = new HomePage(getDriver());
 			home.clkMyAccount();
 			logger.info("System is on Home page");
 			home.clkRegister();
 			logger.info("Navigating to Registration page");
 
-			RegisterAccountPage ra = new RegisterAccountPage(driver);
+			RegisterAccountPage ra = new RegisterAccountPage(getDriver());
 			logger.info("Entering details..");
 			ra.setFirstname(randomAlphabeticString(6).toUpperCase());
 			ra.setLastname(randomAlphabeticString(5).toUpperCase());
@@ -85,21 +85,21 @@ public class TC_SanityE2E extends BaseClass {
 		try 
 		{
 			logger.info("Starting Login Test");
-			HomePage hp = new HomePage(driver);
+			HomePage hp = new HomePage(getDriver());
 			hp.clkMyAccount();
 			hp.clkLogin();
 
-			LoginPage lp = new LoginPage(driver);
+			LoginPage lp = new LoginPage(getDriver());
 			logger.info("Entering Email and Password");
 			lp.enterEmail(prop.getProperty("email"));
 			lp.enterPassword(prop.getProperty("pass"));
 			lp.clkLogin();
 			logger.info("Clicked Login");
 
-			AccountPage ap = new AccountPage(driver);
+			AccountPage ap = new AccountPage(getDriver());
 			Assert.assertTrue(ap.textVerification());
 			logger.info("Verifying the Title of My Account page");
-			Assert.assertEquals(driver.getTitle(), "My Account");
+			Assert.assertEquals(getDriver().getTitle(), "My Account");
 		} 
 		catch (Exception e) 
 		{
@@ -114,12 +114,12 @@ public class TC_SanityE2E extends BaseClass {
 	{
 		try 
 		{
-			HomePage hp = new HomePage(driver);
+			HomePage hp = new HomePage(getDriver());
 			logger.info("Entering Product name in search");
 			hp.enterSearch("Mac");
 			hp.clkSearch();
 
-			SearchPage sp = new SearchPage(driver);
+			SearchPage sp = new SearchPage(getDriver());
 			boolean productexists = sp.isProductExists("MacBook Air");
 			if(productexists)
 			{
@@ -145,11 +145,11 @@ public class TC_SanityE2E extends BaseClass {
 	{
 		try 
 		{
-			SearchPage sp = new SearchPage(driver);
+			SearchPage sp = new SearchPage(getDriver());
 			logger.info("Selecting the Product");
 			sp.clickOnProduct("MacBook Air");
 			
-			ProductPage pp = new ProductPage(driver);
+			ProductPage pp = new ProductPage(getDriver());
 			
 			if(pp.productHeader().equalsIgnoreCase("MacBook Air"))
 			{
@@ -174,7 +174,7 @@ public class TC_SanityE2E extends BaseClass {
 	{
 		try 
 		{
-			ProductPage pp = new ProductPage(driver);
+			ProductPage pp = new ProductPage(getDriver());
 			logger.info("Adding number of Quantity");
 			pp.noOfQuantity("3");
 			logger.info("Clicking Add to Cart button");
@@ -204,7 +204,7 @@ public class TC_SanityE2E extends BaseClass {
 	{
 		try 
 		{
-			AddtoCartPage ac = new AddtoCartPage(driver);
+			AddtoCartPage ac = new AddtoCartPage(getDriver());
 			logger.info("Navigating to Shopping cart screen");
 			ac.clkShoppingCart();
 			if(ac.getProductName().equalsIgnoreCase("MacBook Air"))

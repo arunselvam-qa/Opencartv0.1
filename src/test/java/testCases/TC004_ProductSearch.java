@@ -14,12 +14,14 @@ public class TC004_ProductSearch extends BaseClass {
 	{
 		try 
 		{
-			HomePage hp = new HomePage(driver);
+			logger.info("*Starting Verify Search Test*");
+			
+			HomePage hp = new HomePage(getDriver());
 			logger.info("Entering Product name in search");
 			hp.enterSearch("Mac");
 			hp.clkSearch();
 
-			SearchPage sp = new SearchPage(driver);
+			SearchPage sp = new SearchPage(getDriver());
 			boolean productexists = sp.isProductExists("MacBook Air");
 			if(productexists)
 			{

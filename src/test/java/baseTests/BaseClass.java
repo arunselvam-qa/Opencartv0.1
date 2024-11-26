@@ -28,9 +28,14 @@ import org.testng.annotations.Parameters;
 
 public class BaseClass {
 
-    public static WebDriver driver;
-	public Logger logger;
-	public Properties prop;
+	private static ThreadLocal<WebDriver> threadLocalDriver = new ThreadLocal<>(); 
+	public Logger logger; 
+	public Properties prop; 
+	
+	public static WebDriver getDriver() 
+	{ 
+		return threadLocalDriver.get(); 
+	}
 
 	@BeforeClass(groups = {"Sanity","Regression","Master"})
 	@Parameters({"os","Browser"})
@@ -43,8 +48,9 @@ public class BaseClass {
 		FileInputStream file = new FileInputStream(".//src//test//resources//config.properties");
 		prop = new Properties();
 		prop.load(file);
-		
+
 		logger.info("Opening the Browser");
+		WebDriver driver;
 		if(prop.getProperty("executionEnv").equalsIgnoreCase("remote"))
 		{
 			DesiredCapabilities cap = new DesiredCapabilities();
@@ -66,12 +72,13 @@ public class BaseClass {
 			case "chrome": cap.setBrowserName("chrome"); break;
 			case "edge": cap.setBrowserName("MicrosoftEdge"); break;
 			case "firefox": cap.setBrowserName("firefox"); break;
-			
-			default: logger.fatal("Invalid Broswer"); return;
+
+			default: logger.fatal("Invalid Browser"); return;
 			}
-			
+
 			//driver=new RemoteWebDriver(new URI("http://192.168.1.35:4444/wd/hub").toURL(),cap);
 			driver=new RemoteWebDriver(new URI("http://localhost:4444/").toURL(),cap);
+			threadLocalDriver.set(driver);
 
 		}
 
@@ -85,12 +92,13 @@ public class BaseClass {
 
 			default: logger.fatal("Invalid Broswer"); return;
 			}
+			threadLocalDriver.set(driver);
 		}
 
-		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		driver.get(prop.getProperty("appURL1"));
-		driver.manage().window().maximize();
+		getDriver().manage().deleteAllCookies();
+		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		getDriver().get(prop.getProperty("appURL1"));
+		getDriver().manage().window().maximize();
 	}
 
 	@AfterClass(groups = {"Sanity","Regression","Master"})
@@ -98,7 +106,7 @@ public class BaseClass {
 	{
 		logger.info("Closing the Browser");
 		Thread.sleep(2000);
-		driver.quit();
+		getDriver().quit();
 	}
 
 
@@ -123,13 +131,8 @@ public class BaseClass {
 
 	public String captureScreenshot(String name)
 	{
-		if (driver == null) 
-		{
-            logger.error("WebDriver is not initialized.");
-            return null;
-		}
 		String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-		TakesScreenshot ts = (TakesScreenshot) driver;
+		TakesScreenshot ts = (TakesScreenshot) getDriver();
 		File source = ts.getScreenshotAs(OutputType.FILE);
 
 		String targetPath = System.getProperty("user.dir")+"\\screenshots\\" + name + "_" + timeStamp + ".png";

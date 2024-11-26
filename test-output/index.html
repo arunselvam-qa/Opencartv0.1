@@ -248,7 +248,7 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Sequence&quot;&gt;
     &lt;parameter name=&quot;os&quot; value=&quot;Windows&quot;/&gt;
-    &lt;parameter name=&quot;Browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;parameter name=&quot;Browser&quot; value=&quot;Firefox&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testCases.TC001_AccountRegister&quot;/&gt;
       &lt;class name=&quot;testCases.TC002_Login&quot;/&gt;
@@ -327,32 +327,32 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'CartTest')
 data.setCell(0, 2, 'testCases.TC006_AddToCartTest')
-data.setCell(0, 3, 3504);
+data.setCell(0, 3, 3532);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyRegister')
 data.setCell(1, 2, 'testCases.TC001_AccountRegister')
-data.setCell(1, 3, 2085);
+data.setCell(1, 3, 2422);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyLogin')
-data.setCell(2, 2, 'testCases.TC002_Login')
-data.setCell(2, 3, 1742);
+data.setCell(2, 1, 'ProductDetailsTest')
+data.setCell(2, 2, 'testCases.TC005_ProductDetailView')
+data.setCell(2, 3, 1272);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'ProductDetailsTest')
-data.setCell(3, 2, 'testCases.TC005_ProductDetailView')
-data.setCell(3, 3, 1537);
+data.setCell(3, 1, 'verifyLogin')
+data.setCell(3, 2, 'testCases.TC002_Login')
+data.setCell(3, 3, 1019);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'ShoppingCartTest')
-data.setCell(4, 2, 'testCases.TC007_ShopCartTest')
-data.setCell(4, 3, 598);
+data.setCell(4, 1, 'searchItem')
+data.setCell(4, 2, 'testCases.TC004_ProductSearch')
+data.setCell(4, 3, 524);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'searchItem')
-data.setCell(5, 2, 'testCases.TC004_ProductSearch')
-data.setCell(5, 3, 536);
+data.setCell(5, 1, 'ShoppingCartTest')
+data.setCell(5, 2, 'testCases.TC007_ShopCartTest')
+data.setCell(5, 3, 510);
 window.suiteTableData['Master']= { tableData: data, tableDiv: 'times-div-Master'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Master">
               </div> <!-- times-div-Master -->
             </div> <!-- times-div -->
@@ -380,91 +380,91 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC001_AccountRegister</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUp(Windows, Chrome)</span>
+                <span class="method-name">setUp(Windows, Firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifyRegister</span>
-                <span class="method-start">6463 ms</span>
+                <span class="method-start">4517 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">8557 ms</span>
+                <span class="method-start">6948 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC002_Login</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUp(Windows, Chrome)</span>
-                <span class="method-start">10679 ms</span>
+                <span class="method-name">setUp(Windows, Firefox)</span>
+                <span class="method-start">9539 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifyLogin</span>
-                <span class="method-start">101832 ms</span>
+                <span class="method-start">13628 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">103576 ms</span>
+                <span class="method-start">14648 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC004_ProductSearch</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUp(Windows, Chrome)</span>
-                <span class="method-start">105704 ms</span>
+                <span class="method-name">setUp(Windows, Firefox)</span>
+                <span class="method-start">17212 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">searchItem</span>
-                <span class="method-start">109939 ms</span>
+                <span class="method-start">21663 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">110476 ms</span>
+                <span class="method-start">22187 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC005_ProductDetailView</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUp(Windows, Chrome)</span>
-                <span class="method-start">112612 ms</span>
+                <span class="method-name">setUp(Windows, Firefox)</span>
+                <span class="method-start">24743 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">ProductDetailsTest</span>
-                <span class="method-start">115524 ms</span>
+                <span class="method-start">28661 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">117061 ms</span>
+                <span class="method-start">29934 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC006_AddToCartTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUp(Windows, Chrome)</span>
-                <span class="method-start">119184 ms</span>
+                <span class="method-name">setUp(Windows, Firefox)</span>
+                <span class="method-start">32507 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">CartTest</span>
-                <span class="method-start">122085 ms</span>
+                <span class="method-start">36595 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">125589 ms</span>
+                <span class="method-start">40128 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC007_ShopCartTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUp(Windows, Chrome)</span>
-                <span class="method-start">127691 ms</span>
+                <span class="method-name">setUp(Windows, Firefox)</span>
+                <span class="method-start">42681 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">ShoppingCartTest</span>
-                <span class="method-start">136739 ms</span>
+                <span class="method-start">46395 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">137338 ms</span>
+                <span class="method-start">46905 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

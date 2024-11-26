@@ -28,7 +28,7 @@ public class ExtentReportUtility implements ITestListener {
 	public ExtentTest test;
 
 	String reportName;
-
+	
 	public void onStart(ITestContext testContext) {
 
 		/*SimpleDateFormat df=new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss");
@@ -79,8 +79,8 @@ public class ExtentReportUtility implements ITestListener {
 		test.log(Status.FAIL,result.getName()+" got failed");
 		test.log(Status.INFO, result.getThrowable().getMessage());
 
-		BaseClass bc = new BaseClass();
-		String imgPath = bc.captureScreenshot(result.getName());
+		//BaseClass bc = new BaseClass();
+		String imgPath = BaseClass.getDriver() != null ? new BaseClass().captureScreenshot(result.getName()) : "";
 		test.addScreenCaptureFromPath(imgPath);	
 		
 	}

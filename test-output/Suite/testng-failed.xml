@@ -10,14 +10,12 @@
     <classes>
       <class name="testCases.TC_SanityE2E">
         <methods>
-          <include name="AccountRegisterTest"/>
           <include name="SearchTest"/>
           <include name="setUp"/>
-          <include name="tearDown"/>
           <include name="ProductDetailsPageNavigationTest"/>
-          <include name="LoginTest"/>
-          <include name="AddToCartTest"/>
+          <include name="tearDown"/>
           <include name="ShoppingCartTest"/>
+          <include name="AddToCartTest"/>
         </methods>
       </class> <!-- testCases.TC_SanityE2E -->
     </classes>

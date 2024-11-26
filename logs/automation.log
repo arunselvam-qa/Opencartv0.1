@@ -1,20 +1,36 @@
-10:19:43.878 [main] INFO  testCases.TC004_ProductSearch - Expected Product is presented
-10:19:43.884 [main] INFO  testCases.TC004_ProductSearch - Closing the Browser
-10:19:46.021 [main] INFO  testCases.TC005_ProductDetailView - Opening the Browser
-10:19:48.934 [main] INFO  testCases.TC005_ProductDetailView - Entering Product name in search
-10:19:49.536 [main] INFO  testCases.TC005_ProductDetailView - Selecting the Product
-10:19:50.468 [main] INFO  testCases.TC005_ProductDetailView - Product is displayed in detailed view
-10:19:50.470 [main] INFO  testCases.TC005_ProductDetailView - Closing the Browser
-10:19:52.592 [main] INFO  testCases.TC006_AddToCartTest - Opening the Browser
-10:19:55.494 [main] INFO  testCases.TC006_AddToCartTest - Entering Product name in search
-10:19:56.020 [main] INFO  testCases.TC006_AddToCartTest - Selecting the Product
-10:19:56.901 [main] INFO  testCases.TC006_AddToCartTest - Adding number of Quantity
-10:19:56.957 [main] INFO  testCases.TC006_AddToCartTest - Clicking on Add to Cart button
-10:19:58.996 [main] INFO  testCases.TC006_AddToCartTest - Product added to cart
-10:19:58.998 [main] INFO  testCases.TC006_AddToCartTest - Closing the Browser
-10:20:01.100 [main] INFO  testCases.TC007_ShopCartTest - Opening the Browser
-10:20:10.152 [main] INFO  testCases.TC007_ShopCartTest - Navigating to Shopping cart screen
-10:20:10.444 [main] INFO  testCases.TC007_ShopCartTest - System is in Shopping cart screen
-10:20:10.444 [main] INFO  testCases.TC007_ShopCartTest - Clicked continue shopping
-10:20:10.745 [main] INFO  testCases.TC007_ShopCartTest - Navigated to Home Page
-10:20:10.746 [main] INFO  testCases.TC007_ShopCartTest - Closing the Browser
+14:03:05.309 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ADMIN\eclipse-workspace\Opencartv0.1\master1.xml
+
+14:03:05.459 [main] INFO  testCases.TC001_AccountRegister - Opening the Browser
+14:03:10.230 [main] INFO  testCases.TC001_AccountRegister - System is on Home page
+14:03:11.403 [main] INFO  testCases.TC001_AccountRegister - System is on Registration page
+14:03:11.406 [main] INFO  testCases.TC001_AccountRegister - Entering details..
+14:03:12.389 [main] INFO  testCases.TC001_AccountRegister - Account created
+14:03:12.400 [main] INFO  testCases.TC001_AccountRegister - Closing the Browser
+14:03:14.991 [main] INFO  testCases.TC002_Login - Opening the Browser
+14:03:19.080 [main] INFO  testCases.TC002_Login - *Starting Verify Login Test*
+14:03:19.523 [main] INFO  testCases.TC002_Login - Entering Email and Password
+14:03:20.083 [main] INFO  testCases.TC002_Login - Clicked Login
+14:03:20.099 [main] INFO  testCases.TC002_Login - Closing the Browser
+14:03:22.663 [main] INFO  testCases.TC004_ProductSearch - Opening the Browser
+14:03:27.116 [main] INFO  testCases.TC004_ProductSearch - Entering Product name in search
+14:03:27.637 [main] INFO  testCases.TC004_ProductSearch - Expected Product is presented
+14:03:27.639 [main] INFO  testCases.TC004_ProductSearch - Closing the Browser
+14:03:30.195 [main] INFO  testCases.TC005_ProductDetailView - Opening the Browser
+14:03:34.113 [main] INFO  testCases.TC005_ProductDetailView - Entering Product name in search
+14:03:34.654 [main] INFO  testCases.TC005_ProductDetailView - Selecting the Product
+14:03:35.384 [main] INFO  testCases.TC005_ProductDetailView - Product is displayed in detailed view
+14:03:35.386 [main] INFO  testCases.TC005_ProductDetailView - Closing the Browser
+14:03:37.959 [main] INFO  testCases.TC006_AddToCartTest - Opening the Browser
+14:03:42.048 [main] INFO  testCases.TC006_AddToCartTest - Entering Product name in search
+14:03:42.522 [main] INFO  testCases.TC006_AddToCartTest - Selecting the Product
+14:03:43.502 [main] INFO  testCases.TC006_AddToCartTest - Adding number of Quantity
+14:03:43.533 [main] INFO  testCases.TC006_AddToCartTest - Clicking on Add to Cart button
+14:03:45.578 [main] INFO  testCases.TC006_AddToCartTest - Product added to cart
+14:03:45.579 [main] INFO  testCases.TC006_AddToCartTest - Closing the Browser
+14:03:48.132 [main] INFO  testCases.TC007_ShopCartTest - Opening the Browser
+14:03:51.846 [main] INFO  testCases.TC007_ShopCartTest - Navigating to Shopping cart screen
+14:03:52.132 [main] INFO  testCases.TC007_ShopCartTest - System is in Shopping cart screen
+14:03:52.132 [main] INFO  testCases.TC007_ShopCartTest - Clicked continue shopping
+14:03:52.356 [main] INFO  testCases.TC007_ShopCartTest - Navigated to Home Page
+14:03:52.360 [main] INFO  testCases.TC007_ShopCartTest - Closing the Browser

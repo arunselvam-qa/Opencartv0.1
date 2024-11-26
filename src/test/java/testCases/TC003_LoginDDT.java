@@ -16,20 +16,20 @@ public class TC003_LoginDDT extends BaseClass {
 	{
 		try 
 		{
-			logger.info("*Starting Data Drivern Login Test*");
+			logger.info("*Starting Data getDriver()n Login Test*");
 
-			HomePage hp = new HomePage(driver);
+			HomePage hp = new HomePage(getDriver());
 			hp.clkMyAccount();
 			hp.clkLogin();
 
-			LoginPage lp = new LoginPage(driver);
+			LoginPage lp = new LoginPage(getDriver());
 			logger.info("Entering Email and Password");
 			lp.enterEmail(email);
 			lp.enterPassword(pass);
 			lp.clkLogin();
 			logger.info("Clicked Login");
 
-			AccountPage ap = new AccountPage(driver);
+			AccountPage ap = new AccountPage(getDriver());
 			boolean text = ap.textVerification();
 
 			if(expected.equalsIgnoreCase("Valid"))
